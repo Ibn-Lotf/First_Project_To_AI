@@ -6,7 +6,7 @@ let BtnNegative = document.querySelector(".BtnNegative");
 let BtnEquality = document.querySelector(".BtnEquality");
 let BtnPlus = document.querySelector(".BtnPlus");
 
-let Conter = parseInt(localStorage.FirstProjectNumberOne) || 17;
+let Conter = localStorage.FirstProjectNumberOne ? parseInt(localStorage.FirstProjectNumberOne) : 17;
 NumberThis.textContent = Conter;
 
 function ColorNumberThis(C) {
