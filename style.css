@@ -1,0 +1,59 @@
+
+body {
+    background-color: black;
+}
+
+header {
+    text-align: center;
+    width: 80%;
+    background-color: orange;
+    margin: auto;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.this {
+    width: 254px;
+    height: 259px;
+    border-radius: 47.67px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "BIZ UDMincho";
+    font-size: 200px;
+    font-weight: 400;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.fatherOpnter {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.fatherOpnter button {
+    width: 172px;
+    height: 117px;
+    border-radius: 42px;
+    font-size: 100px;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    color: white;
+}
+
+.fatherOpnter .BtnNegative {
+    background-color: #A20000;
+}
+
+.fatherOpnter .BtnPlus {
+    background-color: #09A200;
+}
+
+.fatherOpnter .BtnEquality {
+    background-color: #0050A2;
+}
