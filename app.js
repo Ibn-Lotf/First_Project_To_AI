@@ -9,6 +9,7 @@ let BtnPlus = document.querySelector(".BtnPlus");
 let Conter = localStorage.FirstProjectNumberOne ? parseInt(localStorage.FirstProjectNumberOne) : 17;
 NumberThis.textContent = Conter;
 
+// start
 function ColorNumberThis(C) {
    if (C == 17) {
     NumberThis.style.color = "blue";
@@ -20,12 +21,14 @@ function ColorNumberThis(C) {
 }
 ColorNumberThis(Conter);
 
+// هذه الدلة للنقل
 function EqualityLocalAndNumberThisToConter(C) {
   localStorage.FirstProjectNumberOne = C;
   NumberThis.textContent = C;
   ColorNumberThis(C)
 }
 
+// هذه دول الأزرار
 BtnPlus.addEventListener("click", _ => {
   Conter++;
   EqualityLocalAndNumberThisToConter(Conter)
@@ -41,12 +44,18 @@ BtnNegative.addEventListener("click", _ => {
   EqualityLocalAndNumberThisToConter(Conter);
 })
 
-// -------------------\
+
+
+
+
+// هذه الأضافة***************************************
 let btnDarkOrLight = document.querySelector(".btnDarkOrLight");
 
+// start
 let DarkOrLight = localStorage.FiPrDarkOrLight || "Light";
 ShowDarkOrLight(DarkOrLight)
 
+// ---
 btnDarkOrLight.addEventListener("click", () => {
   const isDark = DarkOrLight;
   if (isDark === "Dark") {
