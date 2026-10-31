@@ -41,3 +41,78 @@ BtnNegative.addEventListener("click", _ => {
   EqualityLocalAndNumberThisToConter(Conter);
 })
 
+// -------------------\
+let btnDarkOrLight = document.querySelector(".btnDarkOrLight");
+
+let DarkOrLight = localStorage.FiPrDarkOrLight || "Light";
+ShowDarkOrLight(DarkOrLight)
+
+btnDarkOrLight.addEventListener("click", () => {
+  const isDark = DarkOrLight;
+  if (isDark === "Dark") {
+    // body
+    document.body.classList.replace("Dark", "Light");
+    // Number this
+    NumberThis.classList.replace("DarkBoxNumber", "LightBoxNumber");
+    // Buttn
+    btnDarkOrLight.classList.replace("Dark", "Light");
+    btnDarkOrLight.textContent = "Light";
+    // Btns clacls
+    BtnEquality.classList.replace("Darkbtn", "Lightbtn");
+    BtnNegative.classList.replace("Darkbtn", "Lightbtn");
+    BtnPlus.classList.replace("Darkbtn", "Lightbtn");
+    // Save
+    localStorage.FiPrDarkOrLight = "Light";
+    DarkOrLight = "Light";
+  } else {
+    // body
+    document.body.classList.replace("Light", "Dark");
+    // Number this
+    NumberThis.classList.replace("LightBoxNumber", "DarkBoxNumber");
+    // Buttn
+    btnDarkOrLight.classList.replace("Light", "Dark");
+    btnDarkOrLight.textContent = "Dark";
+    // Btns clacls
+    BtnEquality.classList.replace("Lightbtn", "Darkbtn");
+    BtnNegative.classList.replace("Lightbtn", "Darkbtn");
+    BtnPlus.classList.replace("Lightbtn", "Darkbtn");
+    // Save
+    localStorage.FiPrDarkOrLight = "Dark";
+    DarkOrLight = "Dark"; 
+  }
+});
+
+function ShowDarkOrLight(isDark) {
+  if (isDark === "Light") {
+    // body
+    document.body.classList.replace("Dark", "Light");
+    // Number this
+    NumberThis.classList.replace("DarkBoxNumber", "LightBoxNumber");
+    // Buttn
+    btnDarkOrLight.classList.replace("Dark", "Light");
+    btnDarkOrLight.textContent = "Light";
+    // Btns clacls
+    BtnEquality.classList.replace("Darkbtn", "Lightbtn");
+    BtnNegative.classList.replace("Darkbtn", "Lightbtn");
+    BtnPlus.classList.replace("Darkbtn", "Lightbtn");
+    // Save
+    localStorage.FiPrDarkOrLight = "Light";
+    DarkOrLight = "Light";
+
+  } else {
+    // body
+    document.body.classList.replace("Light", "Dark");
+    // Number this
+    NumberThis.classList.replace("LightBoxNumber", "DarkBoxNumber");
+    // Buttn
+    btnDarkOrLight.classList.replace("Light", "Dark");
+    btnDarkOrLight.textContent = "Dark";
+    // Btns clacls
+    BtnEquality.classList.replace("Lightbtn", "Darkbtn");
+    BtnNegative.classList.replace("Lightbtn", "Darkbtn");
+    BtnPlus.classList.replace("Lightbtn", "Darkbtn");
+    // Save
+    localStorage.FiPrDarkOrLight = "Dark";
+    DarkOrLight = "Dark"; 
+  }
+}

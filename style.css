@@ -10,6 +10,7 @@ header {
     margin: auto;
     padding: 5px;
     border-radius: 20px;
+    position: relative;
 }
 
 .this {
@@ -43,7 +44,6 @@ header {
     font-weight: 400;
     text-align: center;
     border: none;
-    color: white;
 }
 
 .fatherOpnter .BtnNegative {
@@ -56,4 +56,48 @@ header {
 
 .fatherOpnter .BtnEquality {
     background-color: #0050A2;
+}
+
+.btnDarkOrLight {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10%;
+    font-size: 15px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.btnDarkOrLight:hover {
+    background-color: #333;
+}
+
+.Dark {
+    background-color: black;
+    color: white;
+}
+
+.Light {
+    background-color: white;
+    color: black;
+}
+
+.DarkBoxNumber {
+    background-color: white;
+}
+
+.LightBoxNumber {
+    background-color: black;
+}
+
+.Darkbtn {
+    color: white;
+}
+
+.Lightbtn {
+    color: black;
 }
